@@ -1,0 +1,100 @@
+.about-work {
+  margin: 40px 0;
+  .text {
+    width: 100%;
+    text-align: center;
+    h2 {
+      color: var(--text);
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    p {
+      color: var(--light-color);
+      font-size: var(--font-size);
+      font-weight: var(--bold);
+    }
+  }
+}
+
+.about-work {
+  --card-border: var(--border);
+  --card-shadow: var(--shadow);
+  --card-head-space: 1rem 1.5rem;
+  --card-body-space: 1rem 1.5rem;
+  --card-foot-space: 1rem 1.5rem;
+  --card-body-height: 100%;
+  --card-rounded: var(--rounded);
+  --card-bg: var(--color);
+  --card-title-color: var(--text);
+  --card-title-size: 20px;
+  --card-title-space: 10px 0;
+  --card-desc-color: #616e96;
+  --card-desc-size: 1rem;
+  --card-desc-space: 15px;
+  --special-color: #1266e3;
+  .all-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card {
+      border: 1px solid var(--border);
+      width: 330px;
+      height: 320px;
+      padding: 30px 50px;
+      border-radius: 0 70px;
+      box-shadow: none;
+      position: relative;
+      margin-left: 50px;
+      margin-right: 50px;
+      .head {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 90px;
+        height: 90px;
+        border-left: 1px solid #dbe8fb;
+        border-bottom: 1px solid #dbe8fb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #eef4fd;
+        border-radius: 0 70px;
+        h1 {
+          color: var(--special-color);
+          font-size: 30px;
+          font-weight: 500;
+        }
+      }
+      .foot {
+        padding-top: 20px;
+        .icon {
+          padding: 20px 0;
+          i.bx {
+            color: var(--special-color);
+            font-size: 40px;
+            padding: 10px;
+            border: 1px solid #dbe8fb;
+            border-radius: 50%;
+            background-color: #eef4fd;
+          }
+        }
+        .title {
+          padding: 10px 0;
+          h1 {
+            color: var(--card-title-color);
+            font-size: 20px;
+            font-weight: 600;
+          }
+        }
+        .desc {
+          p {
+            color: var(--light-color);
+            font-size: var(--card-desc-size);
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}

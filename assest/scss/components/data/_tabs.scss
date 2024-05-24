@@ -1,0 +1,24 @@
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #ccc;
+}
+
+.tab-content {
+  display: none;
+  padding: 20px;
+}
+
+input[type="radio"]:checked ~ .tab-content {
+  display: block;
+}

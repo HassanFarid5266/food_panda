@@ -1,0 +1,99 @@
+.nav {
+  width: 100%;
+  .menu {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    padding: 10px;
+    .logo {
+      img {
+        border-radius: 0;
+        box-shadow: none;
+      }
+    }
+    .links {
+      margin-left: auto;
+      width: 40%;
+      display: flex;
+      align-items: center;
+      position: relative;
+      @media (max-width: screen-size(xxl)) {
+        width: 50%;
+      }
+      @media (max-width: 1280px) {
+        width: 55%;
+      }
+      @media (max-width: screen-size(xl)) {
+        width: 68%;
+      }
+      @media (max-width: screen-size(lg)) {
+        width: 71%;
+      }
+     
+      i.bx {
+        color: var(--text);
+        font-size: 28px;
+        font-weight: var(--bold);
+        display: none;
+        margin-left: auto;
+        @media (max-width: screen-size(md)) {
+          display: block;
+        }
+      }
+    }
+    .nav-link {
+      display: flex;
+      align-items: center;
+      
+      @media (max-width: screen-size(md)) {
+        display: none;
+      }
+      ul.list {
+        display: flex;
+        align-items: center;
+        @media (max-width: screen-size(md)) {
+          display: block;
+          text-align: center;
+        }
+  
+        li.list-item {
+          list-style: none;
+          padding: 20px 18px;
+          a {
+            text-decoration: none;
+            color: var(--text);
+            font-size: var(--font-size);
+            font-weight: var(--bold);
+            &:hover {
+              color: var(--primary);
+            }
+            &.active {
+              color: var(--primary);
+            }
+          }
+        }
+      }
+      .sign-btn {
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        @media (max-width: screen-size(md)) {
+          display: block;
+          text-align: center;
+          margin: 10px 0;
+        }
+  
+        li {
+          list-style-type: none;
+          padding: 0 10px;
+          a {
+            text-decoration: none;
+            color: var(--text);
+            font-size: var(--font-size);
+            font-weight: var(--bold);
+          }
+        }
+      }
+    }
+  }
+}

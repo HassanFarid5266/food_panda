@@ -1,0 +1,151 @@
+.location {
+  padding: 40px 0;
+}
+
+.place {
+  --card-shadow: 0px 0px;
+  --card-body-height: auto;
+  --card-head-space: 1rem 1.5rem;
+  --card-body-space: 1rem 1.5rem;
+  --card-foot-space: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  @media (max-width: screen-size(md)) {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+  }
+  @media (max-width: screen-size(sm)) {
+    grid-template-columns: auto auto;
+  }    
+  @media (max-width: 425px) {
+    grid-template-columns: auto;
+  }    
+  @media (max-width: screen-size(xs)) {
+    grid-template-columns: auto ;
+  }
+
+  .location-card {
+    background-image: url("https://classiads.designinvento.net/classiads-test/wp-content/uploads/2023/01/ultra-location-02.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    width: 270px;
+    height: 220px;
+    position: relative;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: all 4s;
+    @media (max-width: screen-size(xl)) {
+      width: 220px;
+    }
+    @media (max-width: screen-size(md)) {
+      width: 320px;
+    }
+    @media (max-width: screen-size(md)) {
+      width: 340px;
+    }
+    @media (max-width: screen-size(sm)) {
+      width: 250px;
+    }
+    @media (max-width: 425px) {
+      width: 300px;
+    }
+    @media (max-width: screen-size(xs)) {
+      width: 270px;
+    }
+    .f-card {
+      background-color: transparent;
+      border: none;
+      position: absolute;
+      bottom: -20px;
+      color: white;
+      text-align: center;
+      transition: all 4s;
+      @media (max-width: screen-size(xl)) {
+        padding-right: 20px;
+      }
+
+      .show {
+        transition: all 0.5s;
+        h2 {
+          color: var(--body);
+          font-size: var(--other-fs);
+          font-weight: var(--bold-x);
+          @media (max-width: screen-size(sm)) {
+            margin-bottom: 30px;
+          }
+        }
+      }
+      .desc {
+        transform: translate(33%, 100%);
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        transition: all 0.7s;
+        animation: desc 3s normal forwards;
+
+        @media (max-width: screen-size(xl)) {
+          transform: translate(29%, 100%);
+        }
+        @media (max-width: screen-size(sm)) {
+          opacity: 1;
+          transform: translate(29%, -100%);
+          z-index: 1;
+          position: relative;
+        }
+
+        p {
+          color: var(--body);
+          font-size: 14px;
+          font-weight: 500;
+          text-transform: uppercase;
+          background: rgba(234, 93, 73, 1);
+          border-radius: 3px;
+          padding: 4px;
+          display: block;
+          width: 90px;
+        }
+      }
+    }
+  }
+  .sec-location-card {
+    background-image: url("https://classiads.designinvento.net/classiads-test/wp-content/uploads/2023/01/ultra-location-01.jpg");
+  }
+  .thi-location-card {
+    background-image: url("https://classiads.designinvento.net/classiads-test/wp-content/uploads/2023/01/ultra-location-06.jpg");
+  }
+  .fou-location-card {
+    background-image: url("https://classiads.designinvento.net/classiads-test/wp-content/uploads/2023/01/ultra-location-07.jpg");
+  }
+  .five-location-card {
+    background-image: url("https://classiads.designinvento.net/classiads-test/wp-content/uploads/2023/01/ultra-location-03.jpg");
+  }
+  .six-location-card {
+    background-image: url("	https://classiads.designinvento.net/classiads-test/wp-content/uploads/2023/01/ultra-location-04.jpg");
+  }
+  .seve-location-card {
+    background-image: url("https://classiads.designinvento.net/classiads-test/wp-content/uploads/2023/01/ultra-location-05.jpg");
+  }
+  .eig-location-card {
+    background-image: url("https://classiads.designinvento.net/classiads-test/wp-content/uploads/2023/01/ultra-location-08.jpg");
+  }
+}
+
+.location-card:hover .desc {
+  transform: translate(33%, -100%) !important;
+  opacity: 1 !important;
+  @media (max-width: screen-size(sm)) {
+  transform: translate(35%, -100%) !important;
+    
+  }
+}
+
+.location-card:hover .show {
+  margin-bottom: 30px !important;
+  @media (max-width: screen-size(sm)) {
+    margin: 0 !important;
+  }
+}

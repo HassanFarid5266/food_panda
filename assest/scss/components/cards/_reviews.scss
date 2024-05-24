@@ -1,0 +1,101 @@
+.reviews {
+  background-color: #fff6f5;
+}
+
+#card-review {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .reviews-cards {
+    --card-border: var(--border);
+    --card-shadow: var(--shadow);
+    --card-head-space: 1rem 1.5rem;
+    --card-body-space: 1rem 1.5rem;
+    --card-foot-space: 1rem 1.5rem;
+    --card-body-height: 100%;
+    --card-rounded: var(--rounded);
+    --card-bg: var(--color);
+    --card-title-color: var(--text);
+    --card-title-size: 16px;
+    --card-title-space: 15px;
+    --card-subtitle-color: var(--text);
+    --card-subtitle-size: 1.1rem;
+    --card-subtitle-space: 15px;
+    --card-desc-color: #616e96;
+    --card-desc-size: 1rem;
+    --card-desc-space: 15px;
+    --card-badge-size: 1rem;
+    --card-badge-space: 15px;
+    --card-title-clamp: 2;
+    --card-subtitle-clamp: 2;
+    --card-image-width: 100%;
+    --card-image-height: 150px;
+    --card-image-rounded: var(--rounded);
+    --btn-bg-color: #1266e3;
+    box-shadow: var(--card-shadow);
+    position: relative;
+    background-color: var(--card-bg);
+    display: flex;
+    text-decoration: none;
+    border: none;
+    margin: 40px 20px;
+    border-radius: 8px;
+    width: 400px;
+    height: 300px;
+    background-color: var(--body);
+    .card {
+      display: flex;
+      padding: 30px 30px;
+
+      .left {
+        padding-right: 15px;
+        .images {
+          img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+        }
+      }
+      .right {
+        padding-left: 10px;
+        .icon {
+          margin-bottom: 7px;
+          i {
+            color: #f1c734;
+            font-size: 19px;
+          }
+        }
+        .title {
+          padding: 10px 0;
+          h1 {
+            color: var(--card-title-color);
+            font-size: 20px;
+            font-weight: 600;
+          }
+        }
+        .desc {
+          p {
+            color: var(--light-color);
+            font-size: var(--card-desc-size);
+            font-weight: 400;
+          }
+        }
+        .auther {
+          padding-top: 20px;
+          h1 {
+            color: var(--text);
+            font-size: var(--other-fs);
+            font-weight: var(--bold-x);
+          }
+          h2 {
+            text-transform: uppercase;
+            font-size: var(--font-size);
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+$config: (
+  colors: (
+    light: (
+      primary: #EA6753,
+      secondary: #2540a2,
+      success: #00b00f,
+      danger: #ff0000,
+      info: #1e6cd9,
+      warning: #ff2a2a,
+      muted: #42464a,
+      dark: #121111,
+      light: #fff5f5,
+      body: #ffffff,
+      body-subtle: #ffffff6c,
+      text: #000000,
+    ),
+    dark: (
+      primary: #181717,
+      secondary: #80ca61,
+      success: #00b00f,
+      danger: #ff0000,
+      info: #1e6cd9,
+      warning: #ff2a2a,
+      muted: #42464a,
+      dark: #121111,
+      light: #fff5f5,
+      body: #ffffff,
+      text: #000000,
+    ),
+  ),
+  assets: (
+    image: "../images/",
+    fonts: "../fonts/",
+  ),
+  breakpoints: (
+    xs: 340px,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1024px,
+    xxl: 1440px,
+  ),
+);

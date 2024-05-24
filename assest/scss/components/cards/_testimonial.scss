@@ -1,0 +1,111 @@
+.testimonial-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 20px;
+  user-select: none;
+  @media (max-width: 1280px) {
+    margin: 0;
+  }
+  @media (max-width: screen-size(sm)) {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .card {
+    width: 600px;
+    padding: 40px 75px;
+    background-color: var(--body);
+    border-radius: 8px;
+    box-shadow: 0 0 6px 0 #ddd;
+    margin: 0 15px 0 15px;
+    @media (max-width: screen-size(xl)) {
+      padding: 20px 50px;
+    }
+    @media (max-width: screen-size(md)) {
+      padding: 20px 30px;
+    }
+    @media (max-width: screen-size(sm)) {
+      width: auto;
+      margin-top: 15px;
+    }
+    @media (max-width: 425px) {
+      width: 360px;
+      font-size: 20px;
+    }
+    @media (max-width: 375px) {
+      width: 330px;
+    }
+    @media (max-width: screen-size(xs)) {
+      width: 290px;
+    }
+    .head {
+      display: flex;
+      align-items: center;
+      .auther-image {
+        border: 3px solid var(--new-color);
+        padding: 5px;
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0;
+        box-sizing: border-box;
+        margin: 10px;
+        img {
+          width: 60px;
+          height: 60px;
+          object-fit: cover;
+        }
+      }
+      .about-auther {
+        margin: 0 10px;
+        h2 {
+          color: var(--text);
+          font-size: 20px;
+          font-weight: 700;
+          margin-bottom: 0;
+          @media (max-width: screen-size(xl)) {
+            font-size: 15px;
+          }
+          @media (max-width: screen-size(md)) {
+            font-size: 13px;
+          }
+          @media (max-width: 425px) {
+            font-size: 20px;
+          }
+          @media (max-width: screen-size(xs)) {
+            font-size: 13px;
+          }
+        }
+        p {
+          color: #777;
+          @media (max-width: screen-size(xl)) {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .body {
+      margin-top: 10px;
+      .desc {
+        p {
+          color: #777;
+          line-height: 1.8rem;
+          font-size: var(--font-size);
+          font-weight: var(--bold);
+          width: 96%;
+          @media (max-width: 1280px) {
+            width: 100%;
+          }
+          @media (max-width: screen-size(xl)) {
+            font-size: 13px;
+          }
+          @media (max-width: screen-size(md)) {
+            line-height: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+}
