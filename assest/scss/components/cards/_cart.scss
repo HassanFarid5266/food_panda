@@ -11,14 +11,21 @@
   .boxed {
     width: clamp(280px, 80vw, 1600px);
     .left {
-      width: 100%;
+      width: 60%;
       .cart-card {
         border: 1px solid #eee;
-        width: 30%;
+        width: 46%;
         padding: 10px;
         display: flex;
         margin: 20px 7px;
         border-radius: 12px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.2s;
+        &:hover {
+          background-color: #c2176113;
+          transform: scale(1.02);
+        }
         .left {
           width: 70%;
           .content {

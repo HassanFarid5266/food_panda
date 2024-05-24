@@ -6915,17 +6915,26 @@ body {
   width: clamp(280px, 80vw, 1600px);
 }
 .cart .boxed .left {
-  width: 100%;
+  width: 60%;
 }
 .cart .boxed .left .cart-card {
   border: 1px solid #eee;
-  width: 30%;
+  width: 46%;
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 20px 7px;
   border-radius: 12px;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.cart .boxed .left .cart-card:hover {
+  background-color: rgba(194, 23, 97, 0.0745098039);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 .cart .boxed .left .cart-card .left {
   width: 70%;
@@ -7306,202 +7315,72 @@ body {
   font-weight: 400;
 }
 
-.location {
-  padding: 40px 0;
+.cart-flex .right-side {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  width: 380px;
+  padding: 20px;
+  position: relative;
 }
-
-.place {
-  --card-shadow: 0px 0px;
-  --card-body-height: auto;
-  --card-head-space: 1rem 1.5rem;
-  --card-body-space: 1rem 1.5rem;
-  --card-foot-space: 0 1.5rem;
+.cart-flex .right-side .cart-summary-content {
+  width: 90%;
+  position: absolute;
+  bottom: 20px;
+}
+.cart-flex .right-side .cart-summary-content .content-body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px;
+  margin-bottom: 20px;
 }
-@media (max-width: 768px) {
-  .place {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: auto 10px auto;
-    grid-template-columns: auto auto;
-    gap: 10px;
-  }
-}
-@media (max-width: 576px) {
-  .place {
-    -ms-grid-columns: auto auto;
-    grid-template-columns: auto auto;
-  }
-}
-@media (max-width: 425px) {
-  .place {
-    -ms-grid-columns: auto;
-    grid-template-columns: auto;
-  }
-}
-@media (max-width: 340px) {
-  .place {
-    -ms-grid-columns: auto;
-    grid-template-columns: auto;
-  }
-}
-.place .location-card {
-  background-image: url("https://classiads.designinvento.net/classiads-test/wp-content/uploads/2023/01/ultra-location-02.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 8px;
-  width: 270px;
-  height: 220px;
-  position: relative;
-  cursor: pointer;
-  margin: 0 10px;
-  -webkit-transition: all 4s;
-  transition: all 4s;
-}
-@media (max-width: 1024px) {
-  .place .location-card {
-    width: 220px;
-  }
-}
-@media (max-width: 768px) {
-  .place .location-card {
-    width: 320px;
-  }
-}
-@media (max-width: 768px) {
-  .place .location-card {
-    width: 340px;
-  }
-}
-@media (max-width: 576px) {
-  .place .location-card {
-    width: 250px;
-  }
-}
-@media (max-width: 425px) {
-  .place .location-card {
-    width: 300px;
-  }
-}
-@media (max-width: 340px) {
-  .place .location-card {
-    width: 270px;
-  }
-}
-.place .location-card .f-card {
-  background-color: transparent;
-  border: none;
-  position: absolute;
-  bottom: -20px;
-  color: white;
-  text-align: center;
-  -webkit-transition: all 4s;
-  transition: all 4s;
-}
-@media (max-width: 1024px) {
-  .place .location-card .f-card {
-    padding-right: 20px;
-  }
-}
-.place .location-card .f-card .show {
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-.place .location-card .f-card .show h2 {
-  color: var(--body);
-  font-size: var(--other-fs);
-  font-weight: var(--bold-x);
-}
-@media (max-width: 576px) {
-  .place .location-card .f-card .show h2 {
-    margin-bottom: 30px;
-  }
-}
-.place .location-card .f-card .desc {
-  -webkit-transform: translate(33%, 100%);
-          transform: translate(33%, 100%);
-  width: 100%;
-  text-align: center;
-  opacity: 0;
-  -webkit-transition: all 0.7s;
-  transition: all 0.7s;
-  -webkit-animation: desc 3s normal forwards;
-          animation: desc 3s normal forwards;
-}
-@media (max-width: 1024px) {
-  .place .location-card .f-card .desc {
-    -webkit-transform: translate(29%, 100%);
-            transform: translate(29%, 100%);
-  }
-}
-@media (max-width: 576px) {
-  .place .location-card .f-card .desc {
-    opacity: 1;
-    -webkit-transform: translate(29%, -100%);
-            transform: translate(29%, -100%);
-    z-index: 1;
-    position: relative;
-  }
-}
-.place .location-card .f-card .desc p {
-  color: var(--body);
-  font-size: 14px;
+.cart-flex .right-side .cart-summary-content .content-body .left p {
+  color: #333;
+  font-size: 15px;
   font-weight: 500;
+}
+.cart-flex .right-side .cart-summary-content .content-body .left p span {
+  color: #777;
+  font-size: 11px;
+}
+.cart-flex .right-side .cart-summary-content .content-body .right {
+  margin-left: auto;
+  font-weight: 500;
+}
+
+.button {
+  font-size: 16px;
+  font-weight: 700;
   text-transform: uppercase;
-  background: rgb(234, 93, 73);
-  border-radius: 3px;
-  padding: 4px;
-  display: block;
-  width: 90px;
+  background-color: #e21b70;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #eeeeee;
+  border-radius: 10px;
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  cursor: pointer;
 }
-.place .sec-location-card {
-  background-image: url("https://classiads.designinvento.net/classiads-test/wp-content/uploads/2023/01/ultra-location-01.jpg");
-}
-.place .thi-location-card {
-  background-image: url("https://classiads.designinvento.net/classiads-test/wp-content/uploads/2023/01/ultra-location-06.jpg");
-}
-.place .fou-location-card {
-  background-image: url("https://classiads.designinvento.net/classiads-test/wp-content/uploads/2023/01/ultra-location-07.jpg");
-}
-.place .five-location-card {
-  background-image: url("https://classiads.designinvento.net/classiads-test/wp-content/uploads/2023/01/ultra-location-03.jpg");
-}
-.place .six-location-card {
-  background-image: url("	https://classiads.designinvento.net/classiads-test/wp-content/uploads/2023/01/ultra-location-04.jpg");
-}
-.place .seve-location-card {
-  background-image: url("https://classiads.designinvento.net/classiads-test/wp-content/uploads/2023/01/ultra-location-05.jpg");
-}
-.place .eig-location-card {
-  background-image: url("https://classiads.designinvento.net/classiads-test/wp-content/uploads/2023/01/ultra-location-08.jpg");
-}
-
-.location-card:hover .desc {
-  -webkit-transform: translate(33%, -100%) !important;
-          transform: translate(33%, -100%) !important;
-  opacity: 1 !important;
-}
-@media (max-width: 576px) {
-  .location-card:hover .desc {
-    -webkit-transform: translate(35%, -100%) !important;
-            transform: translate(35%, -100%) !important;
-  }
-}
-
-.location-card:hover .show {
-  margin-bottom: 30px !important;
-}
-@media (max-width: 576px) {
-  .location-card:hover .show {
-    margin: 0 !important;
-  }
+.button .abt-btn {
+  color: var(--body);
+  text-decoration: none;
+  font-size: var(--font-size);
+  font-weight: bold;
+  text-transform: capitalize;
+  line-height: 1.42857;
 }
 
 .team-card {
@@ -8438,28 +8317,36 @@ body {
   display: block;
 }
 
-input[type=radio] {
-  display: none;
+.tab-container {
+  text-align: center;
 }
-
-label {
+.tab-container input[type=radio] {
+  display: none;
+  border: 1px solid #eee;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.tab-container label {
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #f0f0f0;
+  padding: 12px 30px;
+  color: #e21b70;
+  font-size: 18px;
+  font-weight: 400;
   margin-right: 5px;
   cursor: pointer;
+  border: 1px solid #eee;
+  border-radius: 4px;
 }
-
-input[type=radio]:checked + label {
-  background-color: #ccc;
+.tab-container input[type=radio]:checked + label {
+  background-color: transparent;
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
 }
-
-.tab-content {
+.tab-container .tab-content {
   display: none;
   padding: 20px;
 }
-
-input[type=radio]:checked ~ .tab-content {
+.tab-container input[type=radio]:checked ~ .tab-content {
   display: block;
 }
 
@@ -8609,40 +8496,6 @@ input[type=radio]:checked ~ .tab-content {
 }
 .btn-file input {
   display: none;
-}
-
-.button {
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-  background-color: var(--primary);
-  border-style: solid;
-  border-width: 1px 1px 1px 1px;
-  border-color: #eeeeee;
-  border-radius: 4px 4px 4px 4px;
-  padding: 0px 15px 0px 15px;
-  width: 54%;
-  height: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  cursor: pointer;
-}
-.button:hover {
-  background-color: var(--text);
-}
-.button .abt-btn {
-  color: var(--body);
-  text-decoration: none;
-  font-size: var(--font-size);
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 1.42857;
 }
 
 .form-select {
