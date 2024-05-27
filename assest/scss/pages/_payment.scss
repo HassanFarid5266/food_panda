@@ -1,0 +1,12 @@
+.Payment_order {
+  .boxed {
+    width: clamp(280px, 60vw, 1600px);
+    .address {
+      display: flex;
+      flex-direction: column;
+    }
+    .input{
+        margin: 10px 0;
+    }
+  }
+}

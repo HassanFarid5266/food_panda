@@ -9397,6 +9397,22 @@ body {
   width: auto !important;
 }
 
+.Payment_order .boxed {
+  width: clamp(280px, 60vw, 1600px);
+}
+.Payment_order .boxed .address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.Payment_order .boxed .input {
+  margin: 10px 0;
+}
+
 .text-center {
   text-align: center;
 }
