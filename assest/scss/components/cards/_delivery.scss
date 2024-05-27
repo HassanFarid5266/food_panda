@@ -1,0 +1,85 @@
+.delivery-card {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  width: 380px;
+  height: auto;
+  margin: 0 10px;
+  .head {
+    position: relative;
+    img {
+      border-radius: 8px 8px 0 0;
+      width: 380px;
+    }
+    .head-content {
+      width: 100%;
+      position: absolute;
+      top: 10px;
+      left: 0;
+      padding: 0 10px;
+      .fav-btn {
+        position: absolute;
+        top: 0;
+        right: 5px;
+        color: #000;
+        background-color: #fff;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .favme {
+          display: block;
+          font-size: ms(2);
+          width: auto;
+          height: auto;
+          cursor: pointer;
+          box-shadow: none;
+          transition: all 0.2s ease;
+          color: #e21b70;
+          margin: 0;
+
+          &.active {
+            color: #dc3232;
+          }
+        }
+      }
+    }
+  }
+  .body {
+    width: 100%;
+    padding: 10px;
+    .body-head {
+      margin-bottom: 2px;
+      .heading {
+        font-size: 1.3rem;
+        font-weight: 700;
+        line-height: 1.5rem;
+        overflow: hidden;
+      }
+      p{
+        color: var(--text);
+        font-size: 18px;
+        font-weight: var(--bold);
+        margin-top: 6px;
+      }
+    }
+    .body-foot{
+      text-align: right;
+      button{
+        border: none;
+        background-color: transparent;
+        text-decoration: none;
+        
+        i{
+          background-color: var(--text);
+          color: var(--body);
+          padding: 10px;
+          border-radius: 50%;
+          font-size: 17px;
+
+        }
+      }
+    }
+  }
+}

@@ -15,32 +15,3 @@
   margin-left: calc(-0.5 * var(--row-gap-x));
 }
 
-.col {
-  box-sizing: border-box;
-  max-width: 100%;
-  width: var(--row-col-size);
-  flex: 0 0 auto;
-  padding-right: calc(var(--row-gap-x) * 0.5);
-  padding-left: calc(var(--row-gap-x) * 0.5);
-  margin-top: var(--row-gap-y);
-
-  @media (max-width: screen-size(xxl)) {
-    --row-col-size: var(--row-col-size-xxl);
-  }
-
-  @media (max-width: screen-size(xl)) {
-    --row-col-size: var(--row-col-size-xl);
-  }
-
-  @media (max-width: screen-size(lg)) {
-    --row-col-size: var(--row-col-size-lg);
-  }
-
-  @media (max-width: screen-size(md)) {
-    --row-col-size: var(--row-col-size-md);
-  }
-
-  @media (max-width: screen-size(sm)) {
-    --row-col-size: var(--row-col-size-sm);
-  }
-}

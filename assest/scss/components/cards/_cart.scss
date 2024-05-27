@@ -1,81 +1,63 @@
-.cart {
-  margin: 30px 10px;
-  h2 {
-    color: var(--text);
-    font-size: 35px;
-    font-weight: 700;
-  }
-  .cart-flex {
-    display: flex;
-  }
-  .boxed {
-    width: clamp(280px, 80vw, 1600px);
-    .left {
-      width: 60%;
-      .cart-card {
-        border: 1px solid #eee;
-        width: 46%;
-        padding: 10px;
-        display: flex;
-        margin: 20px 7px;
-        border-radius: 12px;
-        text-decoration: none;
-        cursor: pointer;
-        transition: all 0.2s;
-        &:hover {
-          background-color: #c2176113;
-          transform: scale(1.02);
-        }
-        .left {
-          width: 70%;
-          .content {
-            h1 {
-              color: var(--text);
-              font-size: 18px;
-              font-weight: 600;
-              margin: 8px 0 2px 0;
-            }
-            span {
-              color: #000;
-              font-size: 15px;
-              font-weight: normal;
-            }
-            p {
-              color: #707070;
-              margin-top: 10px;
-            }
-          }
-        }
-        .right {
-          width: 30%;
-          .add-to-cart {
-            background-image: url("https://images.deliveryhero.io/image/fd-pk/Products/8408590.jpg?width=150&height=150");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-clip: content-box;
-            height: 130px;
-            border-radius: 8px;
-            position: relative;
+#cart-card {
+  display: none;
+}
 
-            i {
-              position: absolute;
-              bottom: 10px;
-              right: 10px;
-              background-color: var(--body);
-              color: #e21b70;
-              width: 35px;
-              height: 35px;
-              border-radius: 50%;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              font-size: 25px;
-              cursor: pointer;
-            }
-          }
-        }
+.cart-card {
+  border: 1px solid #eeeeeea6;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  margin: 20px 7px;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  .left {
+    .content {
+      h1 {
+        color: var(--body);
+        font-size: 24px;
+        font-weight: 600;
+        margin: 8px 0 2px 0;
       }
+      span {
+        color: #dddddd;
+        font-size: 16px;
+        font-weight: normal;
+      }
+      p {
+        color: #dddddd;
+        font-size: 15px;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+.right {
+  width: 30%;
+  .add-to-cart {
+    background-image: url("https://images.deliveryhero.io/image/fd-pk/Products/8408590.jpg?width=150&height=150");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: content-box;
+    height: 130px;
+    border-radius: 8px;
+    position: relative;
+
+    i {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      background-color: var(--body);
+      color: #e21b70;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 25px;
+      cursor: pointer;
     }
   }
 }

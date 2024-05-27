@@ -35,8 +35,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
   updateButtons();
 });
-
-// color change 
-$('.favme').click(function() {
-  $(this).toggleClass('active');
-});
