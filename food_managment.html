@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assest/css/style.css" />
+  </head>
+  <body>
+    <section class="view-taker dishes">
+      <div class="boxed">
+        <div class="title">
+          <i class="bx bx-restaurant"></i>
+          <h3>Order & Reservation</h3>
+        </div>
+
+        <div class="employe-order">
+          <div class="tab-container">
+            <input id="tab1" type="radio" name="tabs" checked />
+            <label for="tab1" class="active" onclick="showTab(1)"
+              >Pending</label
+            >
+            <input id="tab2" type="radio" name="tabs" />
+            <label for="tab2" onclick="showTab(2)">Taken</label>
+            <div class="tab-content " id="tab-content1"></div>
+            <div class="tab-content" id="tab-content2"></div>
+          </div>
+          <div class="empl-name">
+            <span>Hasssan</span>
+          </div>
+          <div class="order-cards">
+            <div class="card">
+              <div class="head">
+                <i class="bx bx-menu"></i>
+                <p class="menu">Biryani</p>
+              </div>
+              <div class="body">
+                <p>1 Full</p>
+              </div>
+              <div class="foot">
+                <button class="btn btn-primary order-avail">Taken</button>
+                <button class="btn btn-dark order-not-avail">
+                  Not Available
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="head">
+                <i class="bx bx-menu"></i>
+                <p class="menu">Cold Drink</p>
+              </div>
+              <div class="body">
+                <p>1 Full</p>
+              </div>
+              <div class="foot">
+                <button class="btn btn-primary order-avail">Taken</button>
+                <button class="btn btn-dark order-not-avail">
+                  Not Available
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="head">
+                <i class="bx bx-menu"></i>
+                <p class="menu">Biryani</p>
+              </div>
+              <div class="body">
+                <p>1 Full</p>
+              </div>
+              <div class="foot">
+                <button class="btn btn-primary order-avail">Taken</button>
+                <button class="btn btn-dark order-not-avail">
+                  Not Available
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="head">
+                <i class="bx bx-menu"></i>
+                <p class="menu">Biryani</p>
+              </div>
+              <div class="body">
+                <p>1 Full</p>
+              </div>
+              <div class="foot">
+                <button class="btn btn-primary order-avail">Taken</button>
+                <button class="btn btn-dark order-not-avail">
+                  Not Available
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="head">
+                <i class="bx bx-menu"></i>
+                <p class="menu">Biryani</p>
+              </div>
+              <div class="body">
+                <p>1 Full</p>
+              </div>
+              <div class="foot">
+                <button class="btn btn-primary order-avail">Taken</button>
+                <button class="btn btn-dark order-not-avail">
+                  Not Available
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="head">
+                <i class="bx bx-menu"></i>
+                <p class="menu">Biryani</p>
+              </div>
+              <div class="body">
+                <p>1 Full</p>
+              </div>
+              <div class="foot">
+                <button class="btn btn-primary order-avail">Taken</button>
+                <button class="btn btn-dark order-not-avail">
+                  Not Available
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      function showTab(tabIndex) {
+        var tabs = document.querySelectorAll(".tab-content");
+        for (var i = 0; i < tabs.length; i++) {
+          tabs[i].style.display = "none";
+        }
+        document.getElementById("tab-content" + tabIndex).style.display =
+          "block";
+      }
+    </script>
+  </body>
+</html>

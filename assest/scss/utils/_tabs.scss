@@ -1,0 +1,43 @@
+.tab-container {
+  width: 100%;
+  input[type="radio"] {
+    display: none;
+    border: 1px solid #eee;
+    transition: all 0.5s;
+  }
+  label {
+    display: inline-block;
+    padding: 8px 26px;
+    margin: 0 4px;
+    color: var(--text);
+    border: 1px solid var(--primary);
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+    @media (max-width: screen-size(sm)) {
+      width: 43%;
+    }
+  }
+
+  input[type="radio"]:checked + label {
+    background-color: #ccc;
+  }
+  input[type="radio"]:checked + label {
+    background-color: transparent;
+    transform: scale(1.07);
+  }
+
+  .tab-content {
+    display: none;
+    padding: 20px;
+  }
+
+  input[type="radio"]:checked ~ .tab-content {
+    display: block;
+    input[type="radio"]:checked ~ .tab-content {
+      display: block;
+    }
+  }
+}

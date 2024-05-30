@@ -7156,6 +7156,97 @@ body {
   line-height: 1.42857;
 }
 
+.order-cards {
+  margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 576px) {
+  .order-cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+  }
+}
+@media (max-width: 340px) {
+  .order-cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+  }
+}
+.order-cards .card {
+  width: 280px;
+  padding: 6px 10px;
+  border: 2px solid #eee;
+  border-radius: 6px;
+  margin: 10px 10px;
+}
+@media (max-width: 576px) {
+  .order-cards .card {
+    width: 90%;
+  }
+}
+.order-cards .card .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.order-cards .card .head i {
+  color: var(--primary);
+  font-size: 30px;
+  font-weight: var(--bold);
+  margin-right: 5px;
+}
+.order-cards .card .head p {
+  color: var(--text);
+  font-size: 24px;
+  font-weight: var(--bold);
+}
+.order-cards .card .body {
+  margin: 10px 0 0px 0;
+}
+.order-cards .card .body p {
+  color: var(--text);
+  font-size: var(--font-size);
+  font-weight: 500;
+  padding-left: 40px;
+}
+.order-cards .card .foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+.order-cards .card .foot button {
+  font-size: 13px;
+  padding: 7px 10px;
+  border-radius: 30px;
+}
+.order-cards .card .foot button:first-child {
+  margin-right: 5px;
+}
+.order-cards .card .foot button .order-avail :hover {
+  color: var(--text);
+  background-color: transparent;
+}
+
 .btn {
   --btn-padding: 0.5rem 1.3rem;
   --btn-rounded: var(--rounded);
@@ -7231,7 +7322,7 @@ body {
   --btn-border: var(--primary);
 }
 .btn-primary:hover {
-  color: var(--text-color);
+  color: var(--text);
 }
 
 .btn-light:hover {
@@ -7248,14 +7339,11 @@ body {
 
 .btn-dark {
   --btn-bg: var(--dark);
-  --btn-bg-hover: var(--dark-hover);
-  --btn-bg-disabled: var(--dark);
-  --btn-bg-focus: var(--dark);
   --btn-color: white;
-  --btn-color-hover: white;
-  --btn-color-disabled: white;
-  --btn-color-focus: white;
-  --btn-border: var(--dark);
+}
+.btn-dark:hover {
+  background-color: transparent;
+  border: 1px solid var(--text);
 }
 
 .btn-sm {
@@ -7311,6 +7399,16 @@ body {
   color: var(--text);
   font-size: 35px;
   font-weight: 600;
+}
+@media (max-width: 420px) {
+  .dishes h3 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 340px) {
+  .dishes h3 {
+    font-size: 20px;
+  }
 }
 .dishes .row {
   display: -webkit-inline-box;
@@ -7439,6 +7537,78 @@ body {
   margin-left: 20px;
   border-radius: 50%;
   font-size: 20px;
+}
+
+.view-taker .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.view-taker .title i {
+  color: var(--primary);
+  font-size: 30px;
+  font-weight: 600;
+  margin-right: 8px;
+}
+.view-taker .employe-order {
+  margin: 45px 0;
+}
+.view-taker .employe-order .empl-name {
+  margin-top: 20px;
+}
+.view-taker .employe-order .empl-name span {
+  color: var(--text);
+  font-size: 30px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5490196078);
+  padding: 0;
+}
+
+.tab-container {
+  width: 100%;
+}
+.tab-container input[type=radio] {
+  display: none;
+  border: 1px solid #eee;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.tab-container label {
+  display: inline-block;
+  padding: 8px 26px;
+  margin: 0 4px;
+  color: var(--text);
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  text-align: center;
+}
+@media (max-width: 576px) {
+  .tab-container label {
+    width: 43%;
+  }
+}
+.tab-container input[type=radio]:checked + label {
+  background-color: #ccc;
+}
+.tab-container input[type=radio]:checked + label {
+  background-color: transparent;
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
+.tab-container .tab-content {
+  display: none;
+  padding: 20px;
+}
+.tab-container input[type=radio]:checked ~ .tab-content {
+  display: block;
+}
+.tab-container input[type=radio]:checked ~ .tab-content input[type=radio]:checked ~ .tab-content {
+  display: block;
 }
 
 .boxed {

@@ -1,0 +1,24 @@
+.view-taker {
+  .title {
+    display: flex;
+    align-items: center;
+    i {
+      color: var(--primary);
+      font-size: 30px;
+      font-weight: 600;
+      margin-right: 8px;
+    }
+  }
+  .employe-order {
+    margin: 45px 0;
+    .empl-name {
+      margin-top: 20px;
+      span {
+        color: var(--text);
+        font-size: 30px;
+        border-bottom: 2px solid #0000008c;
+        padding: 0;
+      }
+    }
+  }
+}

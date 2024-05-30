@@ -64,7 +64,7 @@
   --btn-color-focus: white;
   --btn-border: var(--primary);
   &:hover {
-    color: var(--text-color);
+    color: var(--text);
   }
 }
 
@@ -84,14 +84,11 @@
 
 .btn-dark {
   --btn-bg: var(--dark);
-  --btn-bg-hover: var(--dark-hover);
-  --btn-bg-disabled: var(--dark);
-  --btn-bg-focus: var(--dark);
   --btn-color: white;
-  --btn-color-hover: white;
-  --btn-color-disabled: white;
-  --btn-color-focus: white;
-  --btn-border: var(--dark);
+  &:hover{
+    background-color: transparent;
+    border: 1px solid var(--text);
+  }
 }
 
 .btn-sm {
