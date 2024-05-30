@@ -7283,8 +7283,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-size: var(--btn-size);
-  -webkit-transition: background 1s, color 1s, border 0.5s;
-  transition: background 1s, color 1s, border 0.5s;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   text-decoration: none;
   font-weight: 600;
 }
@@ -7580,7 +7580,7 @@ body {
   padding: 8px 26px;
   margin: 0 4px;
   color: var(--text);
-  border: 1px solid var(--primary);
+  border: 2px solid var(--primary);
   border-radius: 4px;
   font-size: 18px;
   font-weight: 400;
@@ -7589,7 +7589,25 @@ body {
 }
 @media (max-width: 576px) {
   .tab-container label {
-    width: 43%;
+    width: 27%;
+    padding: 8px 20px;
+  }
+  .tab-container label:last-child {
+    padding: 8px;
+  }
+}
+@media (max-width: 375px) {
+  .tab-container label:last-child {
+    padding: 8px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 340px) {
+  .tab-container label:first-child {
+    padding: 8px 12px;
+  }
+  .tab-container label:last-child {
+    font-size: 14px;
   }
 }
 .tab-container input[type=radio]:checked + label {

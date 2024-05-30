@@ -10,15 +10,34 @@
     padding: 8px 26px;
     margin: 0 4px;
     color: var(--text);
-    border: 1px solid var(--primary);
+    border: 2px solid var(--primary);
     border-radius: 4px;
     font-size: 18px;
     font-weight: 400;
     cursor: pointer;
     text-align: center;
     @media (max-width: screen-size(sm)) {
-      width: 43%;
+      width: 27%;
+      padding: 8px 20px;
+      &:last-child {
+        padding: 8px;
+      }
     }
+    @media (max-width: 375px) {
+      &:last-child {
+        padding: 8px;
+        font-size: 16px;
+      }
+    }
+    @media (max-width: screen-size(xs)) {
+      &:first-child {
+        padding: 8px 12px;
+      }
+      &:last-child {
+        font-size: 14px;
+      }
+    }
+    
   }
 
   input[type="radio"]:checked + label {
